@@ -17,4 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult CompararRespuesta (string RespuestasUsuario)
+    {
+        //hacer un objeto para despues con ese objeto subir las cosas a seccion 
+        ViewBag.VBCompResp = JuegoEscape.compararRespuesta(RespuestasUsuario);
+        return ViewBag.VBCompResp;
+    }
 }
