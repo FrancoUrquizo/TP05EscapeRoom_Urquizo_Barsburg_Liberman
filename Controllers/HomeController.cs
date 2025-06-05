@@ -18,10 +18,28 @@ public class HomeController : Controller
         return View();
     }
 
+ public IActionResult InicializarJuego ()
+    {
+        JuegoEscape InicializarJuego = new JuegoEscape ();
+      string json = Objeto.ObjectToString(InicializarJuego);
+       HttpContext.Session.SetString("Juego", json);
+    
+        return View("Index");
+    }
+
     public IActionResult CompararRespuesta (string RespuestasUsuario)
     {
-        //hacer un objeto para despues con ese objeto subir las cosas a seccion 
-        ViewBag.VBCompResp = JuegoEscape.compararRespuesta(RespuestasUsuario);
-        return ViewBag.VBCompResp;
+        JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
+        ViewBag.VBCompResp = InicializarJuego.compararRespuesta(RespuestasUsuario);
+    
+        return View(" ");
     }
+    public IActionResult DevolverPista (int Sala)
+    {
+    JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
+    ViewBag.DevPista = InicializarJuego.devolverPista(Sala);
+    return View(" ");
+    }
+
+
 }

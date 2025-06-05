@@ -38,7 +38,7 @@ SonIguales = true;
 return SonIguales;
 }
 
-public string devolverPista ()
+public string devolverPista (int Sala)
 {
     return DicPistas[Sala];
 } 

@@ -1,8 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+<link rel ="stylesheet" href="css/Estilo.css">
+ 
+ <h1>Ecos del Olvido</h1>
 
 <div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+    <p>Bienvenido a una sala de escape en donde nunca escaparas</p>
+
+    
+ <a href= '@Url.Action("Sala1", "Home")' alt = "Ir al "> Jugar</a>
+ <a href= '@Url.Action("Tutorial", "Home")' alt = "Ir al "> Tutorial</a>
+ <a href= '@Url.Action("Creditos", "Home")' alt = "Ir al "> Creditos</a>
+
 </div>
+
+
+
