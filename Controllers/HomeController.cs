@@ -30,7 +30,12 @@ public class HomeController : Controller
     {
         return View("CartaSala1");
     }
+    public IActionResult Sala3Computadora ()
+    {
+        return View("Sala3Computadora");
+    }
 
+    
     
     public IActionResult IrAPuertaCodigo ()
     {
@@ -52,10 +57,15 @@ public class HomeController : Controller
     public IActionResult CompararRespuesta (string RespuestasUsuario)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-        InicializarJuego.compararRespuesta(RespuestasUsuario);
+        if (InicializarJuego != null )
+        {
+ InicializarJuego.compararRespuesta(RespuestasUsuario);
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
-
+        
         return View("Sala" + InicializarJuego.Sala);
+
+        }
+       
     }
     public IActionResult DevolverPista (int Sala)
     {
