@@ -8,7 +8,9 @@ public class JuegoEscape{
    
     [JsonProperty] 
    public int Sala;
-
+    
+    [JsonProperty] 
+   String nombreUsuario; 
 public JuegoEscape ()
 {
 DicPistas = new Dictionary<int, string>();
