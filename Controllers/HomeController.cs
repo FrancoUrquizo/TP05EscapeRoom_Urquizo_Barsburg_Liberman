@@ -31,6 +31,24 @@ public class HomeController : Controller
         return View("CartaSala1");
     }
 
+    
+    public IActionResult IrAPuertaCodigo ()
+    {
+        return View("PuertaCodigo");
+    }
+    public IActionResult IrASala1 ()
+    {
+        return View("Sala1");
+    }
+
+     public IActionResult IrACreditos ()
+    {
+        return View("Creditos");
+    }
+     public IActionResult IrATutorial ()
+    {
+        return View("Tutorial");
+    }
     public IActionResult CompararRespuesta (string RespuestasUsuario)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 

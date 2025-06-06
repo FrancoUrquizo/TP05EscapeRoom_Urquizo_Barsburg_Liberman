@@ -23,5 +23,9 @@ footer {
 }
 
 .creditos{
-  background-image: (wwwroot/imagenes/CasaInicio)
+  background-image: "./imagenes/CasaInicio";
+}
+
+.index{
+  background-image: "./imagenes/CasaInicio";;
 }
