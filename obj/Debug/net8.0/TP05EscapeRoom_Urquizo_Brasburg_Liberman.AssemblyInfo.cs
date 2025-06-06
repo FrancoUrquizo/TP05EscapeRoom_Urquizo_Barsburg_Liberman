@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP05EscapeRoom_Urquizo_Brasburg_Liberman")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e99c23124a924ef364657c5425a03c977f3c4cb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f41ee1233980ebbd24c52bfa62705ba90f0bab1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP05EscapeRoom_Urquizo_Brasburg_Liberman")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP05EscapeRoom_Urquizo_Brasburg_Liberman")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
