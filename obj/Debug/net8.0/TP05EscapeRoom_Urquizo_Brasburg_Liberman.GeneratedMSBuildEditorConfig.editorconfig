@@ -9,55 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP05EscapeRoom_Urquizo_Brasburg_Liberman
 build_property.RootNamespace = TP05EscapeRoom_Urquizo_Brasburg_Liberman
-build_property.ProjectDir = c:\Users\49257286\TP05EscapeRoom_Urquizo_Barsburg_Liberman\
+build_property.ProjectDir = c:\Users\49006634\Documents\TP05EscapeRoom_Urquizo_Barsburg_Liberman\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\49257286\TP05EscapeRoom_Urquizo_Barsburg_Liberman
+build_property.MSBuildProjectDirectory = c:\Users\49006634\Documents\TP05EscapeRoom_Urquizo_Barsburg_Liberman
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Creditos.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/CartaSala1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YVNhbGExLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Creditos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Index.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala1.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala2.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala3.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala4.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Sala4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Tutorial.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Home/Tutorial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUdXRvcmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Shared/_Layout.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/_ViewImports.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/49257286/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/_ViewStart.cshtml]
+[c:/Users/49006634/Documents/TP05EscapeRoom_Urquizo_Barsburg_Liberman/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
