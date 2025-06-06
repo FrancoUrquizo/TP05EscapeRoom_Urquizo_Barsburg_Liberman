@@ -20,11 +20,11 @@ public class HomeController : Controller
 
  public IActionResult InicializarJuego ()
     {
-        JuegoEscape InicializarJuego = new JuegoEscape ();
+        JuegoEscape InicializarJuego = new JuegoEscape ("Iara");
       string json = Objeto.ObjectToString(InicializarJuego);
        HttpContext.Session.SetString("Juego", json);
     
-        return View("Index");
+        return View("Sala1");
     }
     public IActionResult IrACartaSala1 ()
     {
@@ -57,14 +57,9 @@ public class HomeController : Controller
     public IActionResult CompararRespuesta (string RespuestasUsuario)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-        if (InicializarJuego != null )
-        {
- InicializarJuego.compararRespuesta(RespuestasUsuario);
+        InicializarJuego.compararRespuesta(RespuestasUsuario);
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
-        
         return View("Sala" + InicializarJuego.Sala);
-
-        }
        
     }
     public IActionResult DevolverPista (int Sala)
