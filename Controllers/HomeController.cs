@@ -31,14 +31,16 @@ public class HomeController : Controller
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
         ViewBag.VBCompResp = InicializarJuego.compararRespuesta(RespuestasUsuario);
+
+        
     
-        return View(" ");
+        return View("");
     }
     public IActionResult DevolverPista (int Sala)
     {
     JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
     ViewBag.DevPista = InicializarJuego.devolverPista(Sala);
-    return View(" ");
+    return View("");
     }
 
 
