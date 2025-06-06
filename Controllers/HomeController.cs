@@ -31,9 +31,8 @@ public class HomeController : Controller
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
         ViewBag.VBCompResp = InicializarJuego.compararRespuesta(RespuestasUsuario);
+         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
 
-        
-    
         return View("");
     }
     public IActionResult DevolverPista (int Sala)
