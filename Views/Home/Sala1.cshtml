@@ -1,3 +1,5 @@
+<section class="Sala1">
+
 @{
     ViewData["Title"] = "Sala1";
 }
@@ -5,12 +7,14 @@
 
 <h1> Habitacion </h1>
 
-
+<img id="fotointro.jpg" src="/img/sala.jpg" alt="Inicio" style="display: block; width: 100%;">
 <script>
   setTimeout(function () {
-    document.getElementById("fotoIntro").style.display = "none";
+    document.getElementById("fotointro.jpg").style.display = "none";
   }, 40000); // 40 segundos = 40.000 milisegundos
 </script>
 
 
- <a href= '@Url.Action("CartaSala1", "Home")' alt = "foto carta "> <img src="fotoLogo.png" alt="foto carta"></a>
+ <a href= '@Url.Action("IrACartaSala1", "Home")' alt = "foto carta "> <img src="fotoLogo.png" alt="foto carta"></a>
+
+</section>

@@ -26,14 +26,18 @@ public class HomeController : Controller
     
         return View("Index");
     }
+    public IActionResult IrACartaSala1 ()
+    {
+        return View("CartaSala1");
+    }
 
     public IActionResult CompararRespuesta (string RespuestasUsuario)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-        ViewBag.VBCompResp = InicializarJuego.compararRespuesta(RespuestasUsuario);
+        InicializarJuego.compararRespuesta(RespuestasUsuario);
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
 
-        return View("");
+        return View("Sala" + InicializarJuego.Sala);
     }
     public IActionResult DevolverPista (int Sala)
     {

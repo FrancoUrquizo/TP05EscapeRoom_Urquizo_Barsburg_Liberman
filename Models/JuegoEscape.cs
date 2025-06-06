@@ -7,7 +7,7 @@ public class JuegoEscape{
    private Dictionary<int,string> DicRespuestasCorrectas;
    
     [JsonProperty] 
-   public int Sala;
+   public int Sala = 1;
     
     [JsonProperty] 
    String nombreUsuario; 
@@ -37,6 +37,7 @@ Sala++;
 SonIguales = true;
 
 }
+
 return SonIguales;
 }
 
