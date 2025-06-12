@@ -1,0 +1,23 @@
+<section class="Sala1">
+
+@{
+    ViewData["Title"] = "Sala1";
+}
+<link rel ="stylesheet" href="css/Estilo.css">
+
+
+
+
+
+
+
+ <a href= '@Url.Action("CompararRespuesta", "Home")' alt = "Pista">Pista </a>
+ <p>
+@if( ViewBag.TocoPista != null )
+{
+
+ @ViewBag.TocoPista
+
+}
+</p>
+</section>

@@ -44,7 +44,7 @@ public class JuegoEscape
         return SonIguales;
     }
 
-    public string devolverPista(int Sala)
+    public string devolverPista()
     {
         return DicPistas[Sala];
     }

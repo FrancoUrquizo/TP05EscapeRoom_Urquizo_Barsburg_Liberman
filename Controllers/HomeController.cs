@@ -54,19 +54,25 @@ public class HomeController : Controller
     {
         return View("Tutorial");
     }
-    public IActionResult CompararRespuesta (string RespuestasUsuario)
+    public IActionResult CompararRespuesta (string RespSala, bool TocoPista)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-        InicializarJuego.compararRespuesta(RespuestasUsuario);
+        InicializarJuego.compararRespuesta(RespSala);
+         if (TocoPista != null )
+         {
+            ViewBag.TocoPista = InicializarJuego.devolverPista();
+         }
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
+        Console.WriteLine(InicializarJuego.Sala); 
         return View("Sala" + InicializarJuego.Sala);
        
     }
     public IActionResult DevolverPista (int Sala)
     {
     JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-    ViewBag.DevPista = InicializarJuego.devolverPista(Sala);
-    return View("");
+    ViewBag.DevPista = InicializarJuego.devolverPista();
+
+    return View("Sala" + InicializarJuego.Sala);
     }
 
 

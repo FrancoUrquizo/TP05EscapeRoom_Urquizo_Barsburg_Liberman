@@ -8,10 +8,22 @@
 
 <h1> Habitacion de la computadora </h1>
 
-<h2> Escucha las voces de las almas perdidas </h2>
+
 
 
 
 
 <a  href= '@Url.Action("PuertaCodigo", "Home")' alt = "Ir al "> . </a>
+
+ <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pistas "> Pista</a>
+
+ <p>
+@if( ViewBag.TocoPista != null )
+{
+
+ @ViewBag.TocoPista
+
+}
+</p>
+
 </section>

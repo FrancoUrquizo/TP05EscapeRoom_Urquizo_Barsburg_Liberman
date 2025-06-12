@@ -7,7 +7,7 @@
 
 <h1> Habitacion </h1>
 
-<img id="fotointro.jpg" src="/img/sala.jpg" alt="Inicio" style="display: block; width: 100%;">
+<img id="~/imagenes/fotointro.jpg" src="/img/sala.jpg" alt="Inicio" style="display: block; width: 100%;">
 <script>
   setTimeout(function () {
     document.getElementById("fotointro.jpg").style.display = "none";
@@ -16,5 +16,20 @@
 
 
  <a href= '@Url.Action("IrACartaSala1", "Home")' alt = "foto carta "> <img src="fotoLogo.png" alt="foto carta"></a>
+
+
+
+ <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pista ">  Pista</a>
+
+<p>
+@if( ViewBag.TocoPista != null )
+{
+
+ @ViewBag.TocoPista
+
+}
+</p>
+
+
 
 </section>
