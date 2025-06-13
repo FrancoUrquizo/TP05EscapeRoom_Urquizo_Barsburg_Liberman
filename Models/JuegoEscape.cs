@@ -7,6 +7,7 @@ public class JuegoEscape
     [JsonProperty]
     private Dictionary<int, string> DicRespuestasCorrectas;
 
+
     [JsonProperty]
     public int Sala;
 
@@ -14,6 +15,7 @@ public class JuegoEscape
     String nombreUsuario;
     public JuegoEscape(string nombre)
     {
+
         DicRespuestasCorrectas = new Dictionary<int, string>();
         DicRespuestasCorrectas.Add(1, "2611");
         DicRespuestasCorrectas.Add(2, "42");

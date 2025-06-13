@@ -54,7 +54,7 @@ public class HomeController : Controller
     {
         return View("Tutorial");
     }
-    public IActionResult CompararRespuesta (string RespSala, bool TocoPista)
+    public IActionResult CompararRespuesta (string RespSala, bool TocoPista, bool tocoPreg)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
         if(InicializarJuego == null )
@@ -66,6 +66,10 @@ return View ("Index");
          if (TocoPista != null )
          {
             ViewBag.TocoPista = InicializarJuego.devolverPista();
+         }
+          if (tocoPreg != null )
+         {
+            ViewBag.tocoPreg = InicializarJuego.devolverPista();
          }
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
         Console.WriteLine(InicializarJuego.Sala); 
