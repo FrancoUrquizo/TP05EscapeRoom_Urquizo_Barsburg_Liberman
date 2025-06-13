@@ -14,7 +14,11 @@ body {
   padding: 10px;
 }
 *{
- 
+ width: 100%;
+ height: auto;
+ padding: 0%;
+ margin: 0%;
+
 }
 footer {
   margin-top: 10px;
@@ -24,14 +28,26 @@ footer {
 }
 
 .creditos{
-  background-image: url(~/imagenes/CasaInicio);
+  background-image: url(../imagenes/CasaInicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: none;
+  width:  100vw; 
+  height:  100vh;
 }
 
 .index{
   background-image:url(../imagenes/CasaInicio.jpg) ;
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  background-size: cover;
+  background-position: none;
+  width:  100vw; 
+  height:  100vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+ 
 }
 .Sala1 {
   background-image:url(../imagenes/casa\ embrujada\ chat.png) ;
