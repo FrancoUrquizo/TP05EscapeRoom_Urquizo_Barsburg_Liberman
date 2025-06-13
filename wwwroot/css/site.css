@@ -21,24 +21,35 @@ body {
  margin: 0%;
 
 }
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
-}
-
 .creditos{
-  background-image: url(../imagenes/CasaInicio.jpg);
+  background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: none;
   width:  100vw; 
   height:  100vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+}
+.creditos section div img{
+  width: 200px;
+  height: 200px;
+
 }
 
+.creditos div {
+  text-align: center;
+}
+.creditos .logo{
+  width: 200px;
+  height: 200px;
+}
+
+
 .index{
-  background-image:url(../imagenes/CasaInicio.jpg) ;
+  background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: none;
@@ -50,7 +61,6 @@ footer {
   padding: 1%;
  
 }
-
 
 
 
@@ -247,7 +257,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 25%;
+  width: 0%;
 }
 
 /* Área de texto */
