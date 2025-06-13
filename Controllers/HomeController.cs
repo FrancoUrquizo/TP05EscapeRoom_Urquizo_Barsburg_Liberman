@@ -57,6 +57,11 @@ public class HomeController : Controller
     public IActionResult CompararRespuesta (string RespSala, bool TocoPista)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
+        if(InicializarJuego == null )
+        {
+return View ("Index");
+        }
+        else{
         InicializarJuego.compararRespuesta(RespSala);
          if (TocoPista != null )
          {
@@ -65,7 +70,7 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
         Console.WriteLine(InicializarJuego.Sala); 
         return View("Sala" + InicializarJuego.Sala);
-       
+        }
     }
     public IActionResult DevolverPista (int Sala)
     {

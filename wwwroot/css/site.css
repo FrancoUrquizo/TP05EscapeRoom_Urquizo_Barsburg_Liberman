@@ -1,6 +1,7 @@
 html {
   font-size: 14px;
   min-height: 100%;
+  overflow: hidden; /* evita scroll innecesario */
 }
 
 @media (min-width: 768px) {
@@ -49,8 +50,219 @@ footer {
   padding: 1%;
  
 }
-.Sala1 {
-  background-image:url(../imagenes/casa\ embrujada\ chat.png) ;
-  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Sala1 {
+  background-image:url(../imagenes/casaembrujadachat.png) ;
+  width:  100vw; 
+  height:  100vh;
+
+}
+.Sala1 a 
+{
+  text-decoration: white;
+}
+.Carta40seg
+{
+  background-color: none;
+}
+.cosoDelCodigoS1
+{
+  width:  6%; 
+  height:  4%;
+  float: right;
+  margin-top: 21.5%;
+  margin-right: 25.6%;
+}
+
+/* Estilo para la sección principal */
+.CartaSala1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../imagenes/cosodecartasala1_2-Photoroom.png'); /* ruta a tu imagen */
+  background-color: black;
+  background-size: contain; /* MOSTRAR TODA la imagen sin recortes */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilo para el formulario */
+.CartaSala1 form {
+  position: absolute;
+  top: 35%; /* AJUSTA este valor para que coincida con los botones */
+  left: 50%;
+  transform: translate(-50%, -150%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+}
+
+/* Área de texto */
+.CartaSala1 textarea {
+  resize: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* Botón */
+.CartaSala1 input[type="submit"] {
+  font-size: 16px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
 }

@@ -6,19 +6,29 @@
 <link rel ="stylesheet" href="css/Estilo.css">
 
 <h1> Habitacion </h1>
+<section class="Carta40seg" style="display: none;">
+<button onclick="mostrarCarta()">Mostrar carta de presentación</button>
 
+  <img id="fotointro" src="../imagenes/fotointro.jpg" alt="Inicio" style="width: 100%;">
 
-<img id="../imagenes/fotointro.jpg" src="/img/sala.jpg" alt="Inicio" style="display: block; width: 100%;">
 <script>
-// imagen de 40 segundos de presentación
-  setTimeout(function () {
-    document.getElementById("fotointro.jpg").style.display = "none";
-  }, 40000); // 40 segundos = 40.000 milisegundos
+  function mostrarCarta() {
+    const carta = document.querySelector(".Carta40seg");
+    carta.style.display = "block";
+
+    // Ocultar automáticamente después de 10 segundos
+    setTimeout(function () {
+      carta.style.display = "none";
+    }, 10000); // 10.000 milisegundos = 10 segundos
+  }
 </script>
+</section>
 
 
- <a href= '@Url.Action("IrACartaSala1", "Home")' alt = "foto carta "> <img src="cosoDelCodigoS1" alt="foto carta"></a>
 
+<section class="cosoDelCodigoS1">
+ <a href= '@Url.Action("IrACartaSala1", "Home")' alt = "foto Para Respuesta "> <img src="../imagenes/cosodecartasala1_2.png" alt="foto carta"></a>
+</section>
 
 
  <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pista ">  Pista</a>
