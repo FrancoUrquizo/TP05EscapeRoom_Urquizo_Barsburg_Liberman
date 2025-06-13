@@ -62,151 +62,68 @@ body {
  
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.index img{
+  width: 200px;
+  height: 200px;
+}
+.index div p{
+  margin-top: 0%;
+  font-size: 150%;
+}
+
+.index div ul li{
+  margin-top: 1%;
+  list-style: none;
+}
+.index div ul li a{
+color: white;
+background-color: none;
+border-radius: 10px;
+box-shadow: grey;
+margin-left: 1%;
+margin-right: 1%;
+
+text-decoration: none;
+
+}
+.index div ul li a:hover{
+  box-shadow: none;
+  
+  text-decoration:solid;
+  font-size:larger;
+}
+.tutorial{
+  background-image:url(../imagenes/CasaInicio2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: none;
+  width:  100vw; 
+  height:  100vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+}
+
+.tutorial div{
+  margin-top: 1%;
+}
+.tutorial p{
+  font-size: 30px;
+  margin-top: 2%;
+}
+.tutorial h2{
+margin-top: 2%;
+}
+
+.tutorial h3{
+  margin-top: 1%;
+}
+
+.tutorial img{
+  width: 200px;
+  height: 200px;
+}
 
 .Sala1 {
   background-image:url(../imagenes/casaembrujadachat.png) ;
