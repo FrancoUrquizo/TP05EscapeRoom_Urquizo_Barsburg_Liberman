@@ -28,7 +28,7 @@ footer {
 }
 
 .creditos{
-  background-image: url(../imagenes/CasaInicio.jpg);
+  background-image: url(../imagenes/CasaInicio2.jpg );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: none;
@@ -37,7 +37,7 @@ footer {
 }
 
 .index{
-  background-image:url(../imagenes/CasaInicio.jpg) ;
+  background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: none;
@@ -49,3 +49,14 @@ footer {
   padding: 1%;
  
 }
+.index h1{
+  margin-top: 3%;
+}
+.index div{
+  margin-top: 2%;
+  
+}
+.index div ul li{
+  margin-bottom: 2%;
+}
+
