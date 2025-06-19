@@ -1,0 +1,18 @@
+
+<section class="Presentacion">
+
+@{
+    ViewData["Title"] = "Sala1";
+}
+<link rel ="stylesheet" href="css/Estilo.css">
+
+<section class="Carta40seg">
+  <img id="fotointro" src="../imagenes/fotointro.jpg" alt="Inicio" style="display: block; width: 100%;">
+  <script>
+    // imagen de 40 segundos de presentación
+    setTimeout(function () {
+      document.getElementById("fotointro").style.display = "none";
+    }, 10000); // 10 segundos (10.000 ms)
+  </script>
+</section>
+</section>
