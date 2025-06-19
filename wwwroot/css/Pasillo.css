@@ -1,0 +1,14 @@
+.audio-ambiente {
+    width: 300px;        /* Ancho del reproductor */
+    margin-top: 20px;    /* Espaciado si querés */
+    filter: brightness(90%);
+    background-color: #111;
+    border-radius: 8px;
+  }
+
+  .sala2{
+    background-image: url(../imagenes/pasillo.jpg);
+    width:  100vw; 
+    height:  100vh;
+  
+  }

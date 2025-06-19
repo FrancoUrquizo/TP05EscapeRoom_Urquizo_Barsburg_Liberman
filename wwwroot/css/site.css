@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  margin: 10px;
-  padding: 10px;
+  margin: 0%;
+  padding: 0%;
+  border-radius: none ;
 }
 *{
  width: 100%;
@@ -194,3 +195,46 @@ margin-top: 2%;
   border-radius: 5px;
 }
 
+
+.sala2{
+  background-image: url(../imagenes/pasillo.jpg);
+  background-size: cover;            /* Escala la imagen para cubrir todo */
+  background-repeat: no-repeat;      /* Que no se repita */
+  background-position: center;       /* Centrada */
+  width: 100vw;
+  height: 100vh;
+  color: white;                      /* Para que el texto sea legible */
+  padding: 20px;
+color: white;
+text-align: center;
+}
+  
+
+
+.audio-ambiente {
+  width: 300px;        /* Ancho del reproductor */
+  margin-top: 20px;    /* Espaciado si querés */
+  filter: brightness(90%);
+  background-color: #111;
+  border-radius: 8px;
+}
+.puntooSala2{
+  position: absolute;       /* permite moverlo libremente */
+  right: 20px;
+  left: 15%;              /* distancia desde el borde derecho */
+  top: 50%;                 /* ajustá según la altura de la puerta */
+  transform: translateY(-50%); /* centrado vertical */
+ 
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  
+  font-weight: bold;
+  
+  transition: transform 0.3s ease;
+}
+
+.pista-boton:hover {
+  transform: translateY(-50%) scale(1.1);
+ 
+}
