@@ -88,6 +88,26 @@ return View ("Index");
 
     return View("Sala" + InicializarJuego.Sala);
     }
+       [HttpGet]
+public IActionResult Sala3()
+{
+    return View();
+}
+
+[HttpPost]
+public IActionResult ValidarCodigo(string codigo)
+{
+    if (codigo?.Trim().ToUpper() == "HELP")
+    {
+        return RedirectToAction("Sala4"); // Reemplazá por la siguiente sala
+    }
+    else
+    {
+        ViewBag.Error = "Código incorrecto. Intentá de nuevo.";
+        return View("Sala3Computadora");
+    }
+}
+
 
 
 }

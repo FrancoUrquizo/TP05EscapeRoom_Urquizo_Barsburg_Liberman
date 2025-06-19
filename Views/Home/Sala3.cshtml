@@ -1,4 +1,5 @@
 
+
 <section class ="sala3">
 @{
     ViewData["Title"] = "Habitacion con computadora";
@@ -6,24 +7,48 @@
 <link rel ="stylesheet" href="css/Estilo.css">
  
 
+
 <h1> Habitacion de la computadora </h1>
+@{
+    Layout = "_Layout";
+}
 
 
+<body class="sala3-body">
+    <div class="sala3-contenedor">
+        <img src="~/imagenes/sala3.png" alt="Sala 3" class="sala3-fondo">
 
 
+        <!-- Zonas interactivas -->
+        <a href="/Home/Sala3Computadora" class="click-zona computadora" title="Computadora"></a>
+        <a href="#" class="click-zona papel" title="Nota en el suelo"></a>
+        <a href="#" class="click-zona ventana" title="Ventana"></a>
+    </div>
+</body>
 
 
 <a  href= '@Url.Action("Sala3Computadora", "Home")' alt = "Ir al "> . </a>
 
+<<<<<<< HEAD
  <a href= '@Url.Action("CompararRespuesta", "Home", new {tocoPista = true} )' alt = "Pistas "> Pista</a>
+=======
 
+ <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pistas "> Pista</a>
+>>>>>>> aadf5a64086cc7069671ff9db18a10f0ffdc8bdb
+
+
+<a href="/Home/Sala3Computadora" class="click-zona computadora" title="Computadora"></a>
  <p>
 @if( ViewBag.TocoPista != null )
 {
 
+
  @ViewBag.TocoPista
+
 
 }
 </p>
 
+
 </section>
+
