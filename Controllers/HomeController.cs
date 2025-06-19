@@ -50,9 +50,14 @@ public class HomeController : Controller
     {
         return View("Creditos");
     }
+
      public IActionResult IrATutorial ()
     {
         return View("Tutorial");
+    }
+      public IActionResult IrAPresentacion ()
+    {
+        return View("Presentacion");
     }
     public IActionResult CompararRespuesta (string RespSala, bool TocoPista, bool tocoPreg)
     {
@@ -63,13 +68,13 @@ return View ("Index");
         }
         else{
         InicializarJuego.compararRespuesta(RespSala);
-         if (TocoPista != null )
+         if (TocoPista != false )
          {
             ViewBag.TocoPista = InicializarJuego.devolverPista();
          }
-          if (tocoPreg != null )
+          if (tocoPreg != false )
          {
-            ViewBag.tocoPreg = InicializarJuego.devolverPista();
+            ViewBag.tocoPreg = "TRUE";
          }
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
         Console.WriteLine(InicializarJuego.Sala); 

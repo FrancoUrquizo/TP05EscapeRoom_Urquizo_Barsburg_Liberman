@@ -194,3 +194,22 @@ margin-top: 2%;
   border-radius: 5px;
 }
 
+.TocoCarta
+{
+  float: right;
+  width: 0%;
+  margin-top: 40%;
+  margin-right: -2.5%;
+}
+.Presentacion{
+  background-image:url(../imagenes/CasaInicio2.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: none;
+  width:  100vw; 
+  height:  100vh;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 1%;
+}
