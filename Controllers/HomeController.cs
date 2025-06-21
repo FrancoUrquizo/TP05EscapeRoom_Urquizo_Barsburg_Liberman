@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return View("Index");
     }
 
  public IActionResult InicializarJuego ()
@@ -46,7 +46,15 @@ public class HomeController : Controller
         return View("Sala1");
     }
 
-     public IActionResult IrACreditos ()
+     public IActionResult IrASala2 ()
+    {
+        return View("Sala2");
+    }
+    public IActionResult IrASala3 ()
+    {
+        return View("sala3");
+    }
+    public IActionResult IrACreditos()
     {
         return View("Creditos");
     }
@@ -62,23 +70,25 @@ public class HomeController : Controller
     public IActionResult CompararRespuesta (string RespSala, bool TocoPista, bool tocoPreg)
     {
         JuegoEscape InicializarJuego = Objeto.StringToObject<JuegoEscape>(HttpContext.Session.GetString("Juego")); 
-        if(InicializarJuego == null )
+        if(InicializarJuego == null )   
         {
-return View ("Index");
+          return View ("Index");
         }
-        else{
-        InicializarJuego.compararRespuesta(RespSala);
-         if (TocoPista != false )
-         {
-            ViewBag.TocoPista = InicializarJuego.devolverPista();
-         }
-          if (tocoPreg != false )
-         {
-            ViewBag.tocoPreg = "TRUE";
-         }
-        HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
-        Console.WriteLine(InicializarJuego.Sala); 
-        return View("Sala" + InicializarJuego.Sala);
+        
+        else
+        {
+            InicializarJuego.compararRespuesta(RespSala);
+            if (TocoPista != false)
+            {
+                ViewBag.TocoPista = InicializarJuego.devolverPista();
+            }
+            if (tocoPreg != false)
+            {
+                ViewBag.tocoPreg = "TRUE";
+            }
+            HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
+            Console.WriteLine(InicializarJuego.Sala);
+            return View("Sala" + InicializarJuego.Sala);
         }
     }
     public IActionResult DevolverPista (int Sala)

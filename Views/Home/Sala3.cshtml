@@ -2,11 +2,13 @@
 
 <section class ="sala3">
 @{
-    ViewData["Title"] = "Habitacion con computadora";
+    ViewData["Title"] = "Sala3";
 }
 <link rel ="stylesheet" href="css/Estilo.css">
  
-
+<header>
+   <a class= "calabera" href='@Url.Action("IrASala2", "Home")'> <img src="~/imagenes/Calabera.png" alt=""></a>
+ </header>
 
 <h1> Habitacion de la computadora </h1>
 @{
@@ -29,12 +31,8 @@
 
 <a  href= '@Url.Action("Sala3Computadora", "Home")' alt = "Ir al "> . </a>
 
-<<<<<<< HEAD
- <a href= '@Url.Action("CompararRespuesta", "Home", new {tocoPista = true} )' alt = "Pistas "> Pista</a>
-=======
 
  <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pistas "> Pista</a>
->>>>>>> aadf5a64086cc7069671ff9db18a10f0ffdc8bdb
 
 
 <a href="/Home/Sala3Computadora" class="click-zona computadora" title="Computadora"></a>

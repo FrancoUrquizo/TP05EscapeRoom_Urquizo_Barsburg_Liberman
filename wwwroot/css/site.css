@@ -25,10 +25,54 @@ body {
 
 
 }
+
+.puertaCodigo2{
+  background-image: url(../imagenes/Codigo2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width:  100vw;
+  height:  100vh;
+  color: white;
+  text-align: center;
+  background-color: black;
+}   
+.puertaCodigo2 .pista{
+  color: red;
+}
+
+.puertaCodigo2 form{
+  position: absolute;
+  top: 35%; 
+  left: 50%;
+  transform: translate(-30%, -200%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 5%;
+}
+.calabera img {
+  width: 80px !important;
+  height: auto!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  
+    margin-right: 50px!important;
+    margin-left: 10px!important;
+}
+
 .creditos{
+  
   background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: none;
   width:  100vw;
   height:  100vh;
@@ -36,17 +80,27 @@ body {
   text-align: center;
   font-size: 25px;
   padding: 1%;
+ 
 }
 .creditos section div img{
-  width: 200px;
+   width: 200px;
   height: 200px;
-
+  
+  border-radius: 10px;
 
 }
 
 
 .creditos div {
+  
+  
+  float: left;
+  width: 200px;
+  margin-left: 14%;
+  margin-right: 1%;
+  margin-top: 5%;
   text-align: center;
+  
 }
 .creditos .logo{
   width: 200px;
@@ -59,7 +113,7 @@ body {
 .index{
   background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: none;
   width:  100vw;
   height:  100vh;
@@ -107,7 +161,7 @@ text-decoration: none;
 .tutorial{
   background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: none;
   width:  100vw;
   height:  100vh;
@@ -145,7 +199,7 @@ margin-top: 2%;
   background-image:url(../imagenes/casaembrujadachat.png) ;
   width:  100vw;
   height:  100vh;
-
+  background-size: contain;
 
 }
 .Sala1 a
@@ -161,8 +215,9 @@ margin-top: 2%;
   width:  6%;
   height:  4%;
   float: right;
-  margin-top: 21.5%;
-  margin-right: 25.6%;
+  margin-top: 20.5%;
+  margin-right: 20.6%;
+  
 }
 
 
@@ -171,7 +226,7 @@ margin-top: 2%;
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('../imagenes/cosodecartasala1_2-Photoroom.png'); /* ruta a tu imagen */
+  background-image: url(../imagenes/cosodecartasala1_2-Photoroom.png); /* ruta a tu imagen */
   background-color: black;
   background-size: contain; /* MOSTRAR TODA la imagen sin recortes */
   background-repeat: no-repeat;
@@ -182,7 +237,7 @@ margin-top: 2%;
 /* Estilo para el formulario */
 .CartaSala1 form {
   position: absolute;
-  top: 35%; /* AJUSTA este valor para que coincida con los botones */
+  top: 35%; 
   left: 50%;
   transform: translate(-50%, -150%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -193,7 +248,7 @@ margin-top: 2%;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 0%;
+  width: 5%;
 }
 .CartaSala1 textarea {
   resize: none;
@@ -213,12 +268,12 @@ margin-top: 2%;
 
 .sala2{
   background-image: url(../imagenes/pasillo.jpg);
-  background-size: cover;            /* Escala la imagen para cubrir todo */
-  background-repeat: no-repeat;      /* Que no se repita */
-  background-position: center;       /* Centrada */
+  background-size: cover;           
+  background-repeat: no-repeat;     
+  background-position: center;       
   width: 100vw;
   height: 100vh;
-  color: white;                      /* Para que el texto sea legible */
+  color: transparent;                    
   padding: 20px;
 color: white;
 text-align: center;
@@ -227,26 +282,38 @@ text-align: center;
 
 
 .audio-ambiente {
-  width: 300px;        /* Ancho del reproductor */
-  margin-top: 20px;    /* Espaciado si querés */
+  width: 300px;       
+  margin-top: 20px;   
   filter: brightness(90%);
   background-color: #111;
   border-radius: 8px;
 }
 .puntooSala2{
-  position: absolute;       /* permite moverlo libremente */
+  position: absolute;       
   right: 20px;
-  left: 15%;              /* distancia desde el borde derecho */
-  top: 50%;                 /* ajustá según la altura de la puerta */
-  transform: translateY(-50%); /* centrado vertical */
+  left: 15%;             
+  top: 50%;                
+  transform: translateY(-50%); 
  
-  color: white;
+  color: transparent;
   padding: 8px 12px;
   text-decoration: none;
   
   font-weight: bold;
   
-  transition: transform 0.3s ease;
+  
+}
+.puntooSala2:hover {
+  position: absolute;       
+  right: 20px;
+  left: 940px;             
+  top: 50%;                
+ width: 10px;
+  color: transparent;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
 }
 
 .pista-boton:hover {
@@ -293,6 +360,7 @@ text-align: center;
   border-radius: 4px;
   font-size: 1rem;
   overflow-wrap: break-word;
+  margin-left: 20px;
 }
 
 

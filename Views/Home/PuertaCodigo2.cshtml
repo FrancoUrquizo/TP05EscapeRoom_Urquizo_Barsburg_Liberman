@@ -1,0 +1,34 @@
+<section class = "puertaCodigo2">
+@{
+    ViewData["Title"] = "PuertaCodigo";
+}
+<link rel ="stylesheet" href="css/Estilo.css">
+ 
+ <header>
+   <a  href='@Url.Action("IrASala2", "Home")'> <img src="~/imagenes/Calabera.png" class= "calabera" alt=""></a>
+ </header>
+
+  <form method="post" action = '@Url.Action("CompararRespuesta", "Home")'>
+  
+
+ <a href= '@Url.Action("CompararRespuesta", "Home")' class="pista" alt = "Pista "> Pista </a>
+ <p>
+   @if( ViewBag.TocoPista != null )
+   {
+  
+   @ViewBag.TocoPista
+
+  }
+  </p>
+
+<p>
+ Contraseña: <textarea name="RespSala" id="RespSala2" rows="1" cols="1">
+</textarea>
+<input type="submit" value=" Enviar">
+
+</p>
+  </form>
+
+
+
+</section>
