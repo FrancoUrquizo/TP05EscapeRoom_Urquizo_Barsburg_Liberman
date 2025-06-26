@@ -12,16 +12,24 @@
 
 <h2> Escucha las voces de las almas perdidas </h2>
 
-<audio class="audio-ambiente" controls>
-    <source src='@Url.Content("~/Audio/Voces.mp3")'  type="audio/mpeg">
-</audio>
+
+<div class="audioWrapper">
+    <audio controls>
+        <source src="~/Audio/Voces.mp3" type="audio/mpeg" />
+        Your browser does not support this audio format.
+    </audio>
+</div>
+
 
 
 <a  href= '@Url.Action("IrAPuertaCodigo", "Home")'class="puntooSala2" alt = "Ir al "> . </a>
 
 
- <a href= '@Url.Action("CompararRespuesta", "Home")' alt = "Pista "> Pista </a>
- <p>
+<section class="Pista">
+
+ <a href= '@Url.Action("CompararRespuesta", "Home" , new { TocoPista = true})' alt = "Pista ">  Pista</a>
+
+<p>
 @if( ViewBag.TocoPista != null )
 {
 
@@ -29,5 +37,6 @@
 
 }
 </p>
+</section>
 
 </section>

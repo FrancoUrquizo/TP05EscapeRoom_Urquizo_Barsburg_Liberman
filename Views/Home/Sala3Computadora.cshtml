@@ -13,29 +13,24 @@
 <header>
    <a class= "calabera" href='@Url.Action("IrASala2", "Home")'> <img src="~/imagenes/Calabera.png" alt=""></a>
  </header>
-
 <body class="sala3-body">
     <div class="sala3-contenedor">
         <img src="~/imagenes/sala3computadora.png" alt="Computadora encendida" class="sala3-fondo">
-
 
         <div class="computadora-texto">
             <p>¿Aún estás ahí? No tienes mucho tiempo. Escúchame, no confíes en lo que ves.</p>
             <p>Puedo ayudarte, pero necesito un código. Está escondido en los archivos del escritorio.</p>
         </div>
 
-
         <div class="nota-acertijo">
             <strong>Acertijo:</strong> No sumes los números, pasá cada número a su letra en el abecedario.
         </div>
 
-
         <form method="post" action="/Home/ValidarCodigo" class="form-codigo">
             <label for="codigo">Ingresá el código:</label>
-            <input type="text" name="codigo" id="codigo" placeholder="Ej: HOLA">
+            <input type="text" name="codigo" id="codigo" placeholder="Ej: HELP">
             <button type="submit">Enviar</button>
         </form>
-
 
         @if (ViewBag.Error != null)
         {
@@ -43,6 +38,7 @@
         }
     </div>
 </body>
+
   <form method="post" action = '@Url.Action("CompararRespuesta", "Home")'>
 <p>
 Mensaje: <textarea name="RespSala" id="IdSala3Computadora" rows="1" cols="10">

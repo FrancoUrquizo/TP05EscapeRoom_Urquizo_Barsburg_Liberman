@@ -109,9 +109,9 @@ public IActionResult Sala3()
 [HttpPost]
 public IActionResult ValidarCodigo(string codigo)
 {
-    if (codigo?.Trim().ToUpper() == "HELP")
+    if (codigo.ToUpper() == "HELP")
     {
-        return RedirectToAction("Sala4"); // Reemplazá por la siguiente sala
+        return View("Sala4"); 
     }
     else
     {
