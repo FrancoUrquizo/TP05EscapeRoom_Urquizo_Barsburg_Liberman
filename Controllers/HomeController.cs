@@ -35,8 +35,10 @@ public class HomeController : Controller
         return View("Sala3Computadora");
     }
 
-    
-    
+    public IActionResult irASala4 ()
+    {
+        return View("sala4");
+    }
     public IActionResult IrAPuertaCodigo ()
     {
         return View("PuertaCodigo");
