@@ -39,7 +39,7 @@ public class HomeController : Controller
     
     public IActionResult IrAPuertaCodigo ()
     {
-        return View("PuertaCodigo");
+        return View("PuertaCodigo2");
     }
     public IActionResult IrASala1 ()
     {
