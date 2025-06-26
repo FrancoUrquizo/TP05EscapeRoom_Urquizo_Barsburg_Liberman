@@ -10,15 +10,6 @@
  </header>
 
 <h1> Habitacion </h1>
-<<section class="Carta40seg">
-  <img id="fotointro" src="../imagenes/CartaInicio.png" alt="Inicio" style="display: block; width: 100%;">
-  <script>
-    // imagen de 40 segundos de presentación
-    setTimeout(function () {
-      document.getElementById("fotointro").style.display = "none";
-    }, 10000); // 10 segundos (10.000 ms)
-  </script>
-</section>
 
 
 
@@ -26,6 +17,7 @@
  <a href= '@Url.Action("IrACartaSala1", "Home")' alt = "foto Para Respuesta "> <img src="../imagenes/cosodecartasala1_2.png" alt="foto carta"></a>
 </section>
 
+<section class="Pista">
 
  <a href= '@Url.Action("CompararRespuesta", "Home" , new { TocoPista = true})' alt = "Pista ">  Pista</a>
 
@@ -36,14 +28,19 @@
  @ViewBag.TocoPista
 
 }
-<section class="TocoCarta">
- <a href= '@Url.Action("CompararRespuesta", "Home" , new {tocoPreg = true})' alt = "acertijo ">  </a>
+</p>
 </section>
+
+<section class="TocoCarta">
+ <a href= '@Url.Action("CompararRespuesta", "Home" , new {tocoPreg = true})' alt = "acertijo "> aa </a>
+
+<p>
 @if( ViewBag.tocoPreg != null )
 {
 
-   <img src="../imagenes/CartaSala1.psd" alt="Foto acertijo">
+   <img src="../imagenes/CartaSala1.jpg" alt="Foto acertijo">
 }
+</section>
 </p>
 
 
