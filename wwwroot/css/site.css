@@ -217,8 +217,8 @@ margin-top: 2%;
   width:  6%;
   height:  4%;
   float: right;
-  margin-top: 20.5%;
-  margin-right: 20.6%;
+  margin-top: 19%;
+  margin-right: 30%;
   
 }
 
@@ -517,10 +517,35 @@ text-align: center;
 
 .TocoCarta
 {
-float: right;
-width: 0%;
-margin-top: 40%;
-margin-right: -2.5%;
+  color: white;
+  width: 6%;
+  height: 4%;
+  float: right;
+  margin-top: 31%;
+  margin-right: -9%;
+ text-decoration: none;
+}
+.TocoCarta a{
+  list-style: none;
+}
+.TocoCarta a:hover {
+  position: absolute;       
+  right: 20px;
+  left: 1290px;             
+  top: 75%;                
+ width: 10px;
+  color: transparent;
+  padding: 8px 12px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+.TocoCarta img{
+  float: right;
+  width: 300px; 
+
+
+  
 }
 .Presentacion{
 background-image:url(../imagenes/CasaInicio2.jpg) ;
@@ -533,4 +558,11 @@ color: white;
 text-align: center;
 font-size: 25px;
 padding: 1%;
+}
+
+.Pista
+{
+  margin-top: 5%;
+  color: white;
+  width: 8%;
 }

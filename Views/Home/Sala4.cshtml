@@ -1,26 +1,20 @@
 <section class="Sala1">
 
 @{
-    ViewData["Title"] = "Sala1";
+    Layout = "_Layout";
 }
-<link rel ="stylesheet" href="css/Estilo.css">
 
-<header>
-   <a class= "calabera" href='@Url.Action("Index", "Home")'> <img src="~/imagenes/Calabera.png" alt=""></a>
- </header>
+<body class="sala4-body">
+    <div class="sala4-contenedor">
+        <img src="../imagenes/sala4.png" alt="Pared rota" class="sala4-fondo">
+        <div class="texto-sala4">
+            <h2>Una pared deteriorada llama tu atención...</h2>
+            <p>¿Qué harás? Tal vez puedas romperla.</p>
+            <a href="/Home/ParedRota" class="boton-romper">Romper la pared</a>
+        </div>
+    </div>
+</body>
 
 
 
 
- <a href= '@Url.Action("CompararRespuesta", "Home" )' alt = "Pista ">  Pista</a>
-
- <a href= '@Url.Action("CompararRespuesta", "Home")' alt = "Pista">Pista </a>
- <p>
-@if( ViewBag.TocoPista != null )
-{
-
- @ViewBag.TocoPista
-
-}
-</p>
-</section>
