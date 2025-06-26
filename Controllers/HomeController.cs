@@ -20,9 +20,9 @@ public class HomeController : Controller
 
  public IActionResult InicializarJuego ()
     {
-        JuegoEscape InicializarJuego = new JuegoEscape ("Iara");
-      string json = Objeto.ObjectToString(InicializarJuego);
-       HttpContext.Session.SetString("Juego", json);
+        JuegoEscape InicializarJuego = new JuegoEscape ("iara");
+      
+       HttpContext.Session.SetString("Juego", Objeto.ObjectToString(InicializarJuego));
     
         return View("Sala1");
     }
@@ -41,7 +41,7 @@ public class HomeController : Controller
     }
     public IActionResult IrAPuertaCodigo ()
     {
-        return View("PuertaCodigo");
+        return View("PuertaCodigo2");
     }
     public IActionResult IrASala1 ()
     {
