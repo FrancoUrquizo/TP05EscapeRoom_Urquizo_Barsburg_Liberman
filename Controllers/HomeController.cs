@@ -55,7 +55,7 @@ public class HomeController : Controller
     }
          public IActionResult irASala3Computadora ()
     {
-        return View("sala4");
+        return View("Sala3Computadora");
     }
     public IActionResult irASala4 ()
     {
