@@ -1,20 +1,21 @@
-<section class="Sala1">
-
 @{
+    ViewData["Title"] = "Sala 4";
     Layout = "_Layout";
 }
+<link rel="stylesheet" href="~/css/sala4.css" />
+<header>
+   <a class= "calabera" href='@Url.Action("IrASala3Computadora", "Home")'> <img src="~/imagenes/Calabera.png" alt=""></a>
+ </header>
 
-<body class="sala4-body">
-    <div class="sala4-contenedor">
-        <img src="../imagenes/sala4.png" alt="Pared rota" class="sala4-fondo">
-        <div class="texto-sala4">
-            <h2>Una pared deteriorada llama tu atención...</h2>
-            <p>¿Qué harás? Tal vez puedas romperla.</p>
-            <a href="/Home/ParedRota" class="boton-romper">Romper la pared</a>
-        </div>
+
+<section class="sala4">
+    <div class="contenedor-sala4">
+        <img src="~/imagenes/sala4.png" alt="Bate apoyado" class="fondo-sala4" />
+
+
+        <a href="@Url.Action("IrASala4ParedRota", "Home")">
+            <div class="bate-interactivo" title="Golpear pared"></div>
+        </a>
     </div>
-</body>
-
-
-
+</section>
 

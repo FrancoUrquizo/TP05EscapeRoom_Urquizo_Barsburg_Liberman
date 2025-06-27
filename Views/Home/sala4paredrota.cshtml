@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Pared Rota";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/sala4.css" />
+<header>
+   <a class= "calabera" href='@Url.Action("IrASala4", "Home")'> <img src="~/imagenes/Calabera.png" alt=""></a>
+ </header>
+
+
+<section class="sala4">
+    <div class="contenedor-sala4">
+        <img src="~/imagenes/sala4paredrota.png" alt="Pared rota" class="fondo-sala4" />
+        <div class="mensaje-final">
+            <h2>¿Saliste?</h2>
+            <p>Has logrado romper la pared y escapar... ¿o no del todo?</p>
+            <a href="@Url.Action("IrACreditos", "Home")" class="btn">Ver créditos</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+

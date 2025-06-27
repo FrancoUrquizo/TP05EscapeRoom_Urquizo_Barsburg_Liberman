@@ -5,11 +5,15 @@ html {
 }
 
 
+
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
+
+
 
 
 body {
@@ -24,7 +28,10 @@ body {
  margin: 0%;
 
 
+
+
 }
+
 
 .puertaCodigo2{
   background-image: url(../imagenes/Codigo2.jpg);
@@ -36,14 +43,15 @@ body {
   color: white;
   text-align: center;
   background-color: black;
-}   
+}  
 .puertaCodigo2 .pista{
   color: red;
 }
 
+
 .puertaCodigo2 form{
   position: absolute;
-  top: 35%; 
+  top: 35%;
   left: 50%;
   transform: translate(-30%, -200%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -62,14 +70,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000; 
-  
+  z-index: 1000;
+ 
   margin-right: 50px!important;
   margin-left: 10px!important;
 }
 
+
 .creditos{
-  
+ 
   background-image:url(../imagenes/CasaInicio2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,29 +94,35 @@ body {
 .creditos section div img{
    width: 200px;
   height: 200px;
-  
+ 
   border-radius: 10px;
+
 
 }
 .creditos h2{
   margin-bottom: 2%;
 }
 
+
 .creditos div {
-  
-  
+ 
+ 
   float: left;
   width: 200px;
   margin-left: 16%;
   margin-right: 1%;
   margin-top: 5%;
   text-align: center;
-  
+ 
 }
 .creditos .logo{
   width: 200px;
   height: 200px;
 }
+
+
+
+
 
 
 
@@ -127,6 +142,8 @@ body {
 }
 
 
+
+
 .index img{
   width: 200px;
   height: 200px;
@@ -135,6 +152,8 @@ body {
   margin-top: 0%;
   font-size: 150%;
 }
+
+
 
 
 .index div ul li{
@@ -150,7 +169,11 @@ margin-left: 1%;
 margin-right: 1%;
 
 
+
+
 text-decoration: none;
+
+
 
 
 }
@@ -174,6 +197,8 @@ text-decoration: none;
 }
 
 
+
+
 .tutorial div{
   margin-top: 1%;
 }
@@ -186,9 +211,13 @@ margin-top: 2%;
 }
 
 
+
+
 .tutorial h3{
   margin-top: 1%;
 }
+
+
 
 
 .tutorial img{
@@ -197,11 +226,14 @@ margin-top: 2%;
 }
 
 
+
+
 .Sala1 {
   background-image:url(../imagenes/casaembrujadachat.png) ;
   width:  100vw;
   height:  100vh;
   background-size: contain;
+
 
 }
 .Sala1 a
@@ -219,8 +251,10 @@ margin-top: 2%;
   float: right;
   margin-top: 19%;
   margin-right: 30%;
-  
+ 
 }
+
+
 
 
 /* Estilo para la sección principal */
@@ -236,10 +270,12 @@ margin-top: 2%;
 }
 
 
+
+
 /* Estilo para el formulario */
 .CartaSala1 form {
   position: absolute;
-  top: 35%; 
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -150%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -259,6 +295,8 @@ margin-top: 2%;
 }
 
 
+
+
 .CartaSala1 input[type="submit"] {
   font-size: 16px;
   padding: 5px 15px;
@@ -268,11 +306,12 @@ margin-top: 2%;
   border-radius: 5px;
 }
 
+
 .sala2{
   background-image: url(../imagenes/pasillo.jpg);
-  background-size: cover;           
-  background-repeat: no-repeat;     
-  background-position: center;       
+  background-size: cover;          
+  background-repeat: no-repeat;    
+  background-position: center;      
   width: 100vw;
   height: 100vh;
   color: transparent;                    
@@ -280,9 +319,11 @@ margin-top: 2%;
 color: white;
 text-align: center;
 }
-  
+ 
+
 
 .audioWrapper {
+
 
   width: 200px;
   height: 100px;
@@ -290,30 +331,31 @@ text-align: center;
   border: solid 1px #000;
   }
 
+
   .audioWrapper audio{
     width: 100%;
     height: 100px;
     margin-left: 425%;
   }
 .puntooSala2{
-  position: absolute;       
+  position: absolute;      
   right: 20px;
-  left: 15%;             
+  left: 15%;            
   top: 50%;                
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
  
   color: transparent;
   padding: 8px 12px;
   text-decoration: none;
-  
+ 
   font-weight: bold;
-  
-  
+ 
+ 
 }
 .puntooSala2:hover {
-  position: absolute;       
+  position: absolute;      
   right: 20px;
-  left: 940px;             
+  left: 940px;            
   top: 50%;                
  width: 10px;
   color: transparent;
@@ -322,6 +364,7 @@ text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
+
 
 .pista-boton:hover {
   transform: translateY(-50%) scale(1.1);
@@ -337,12 +380,16 @@ text-align: center;
 }
 
 
+
+
 .sala3-contenedor {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
+
+
 
 
 .sala3-fondo {
@@ -371,6 +418,8 @@ text-align: center;
 }
 
 
+
+
 .nota-acertijo {
   color: #ffcccc;
   border-left: 5px solid red;
@@ -378,9 +427,13 @@ text-align: center;
 }
 
 
+
+
 .form-codigo {
   text-align: center;
 }
+
+
 
 
 .form-codigo input[type="text"] {
@@ -389,6 +442,8 @@ text-align: center;
   width: 180px;
   max-width: 60%;
 }
+
+
 
 
 .form-codigo button {
@@ -407,6 +462,8 @@ text-align: center;
 }
 
 
+
+
 .nota-acertijo {
   background-color: #222;
   color: #ffcccc;
@@ -417,10 +474,14 @@ text-align: center;
 }
 
 
+
+
 .form-codigo {
   text-align: center;
   margin-top: 20px;
 }
+
+
 
 
 .form-codigo input[type="text"] {
@@ -428,6 +489,8 @@ text-align: center;
   font-size: 16px;
   width: 180px;
 }
+
+
 
 
 .form-codigo button {
@@ -446,6 +509,8 @@ text-align: center;
 }
 
 
+
+
 .sala3-contenedor {
   position: relative;
   width: 100vw;
@@ -462,12 +527,16 @@ text-align: center;
 }
 
 
+
+
 .sala3-contenedor {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
+
+
 
 
 .sala3-fondo {
@@ -483,11 +552,19 @@ text-align: center;
 
 
 
+
+
+
+
 .click-zona {
   position: absolute;
   cursor: pointer;
   z-index: 10;
 }
+
+
+
+
 
 
 
@@ -498,6 +575,10 @@ text-align: center;
   width: 10%;
   height: 12%;
 }
+
+
+
+
 
 
 
@@ -529,12 +610,13 @@ text-align: center;
  color: transparent;
 }
 .TocoCarta a:hover {
-  position: absolute;       
-  
+  position: absolute;      
+ 
 right: 19px;
-left: 1280px;             
+left: 1280px;            
 top: 77%;                
 width: 30px;
+
 
   color: transparent;
   padding: 8px 12px;
@@ -544,23 +626,26 @@ width: 30px;
 }
 .TocoCarta img{
   float: right;
-  width: 300px; 
+  width: 300px;
 
 
-  
+
+
+ 
 }
 .Presentacion{
 background-image:url(../imagenes/CasaInicio2.jpg) ;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: none;
-width:  100vw; 
+width:  100vw;
 height:  100vh;
 color: white;
 text-align: center;
 font-size: 25px;
 padding: 1%;
 }
+
 
 .Pista
 {
@@ -573,3 +658,86 @@ padding: 1%;
   text-align: center;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sala4 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.contenedor-sala4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.fondo-sala4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.bate-interactivo {
+    position: absolute;
+    left: 43%;
+    top: 65%;
+    width: 5%;
+    height: 20%;
+    cursor: pointer;
+}
+
+
+.mensaje-final {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.75);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.mensaje-final h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+
+.mensaje-final p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    background-color: #28a745;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
