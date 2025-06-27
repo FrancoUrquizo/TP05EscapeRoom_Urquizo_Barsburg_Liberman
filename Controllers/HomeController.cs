@@ -141,7 +141,7 @@ public IActionResult ValidarCodigo(string codigo)
     }                                              
     else
     {
-        ViewBag.Error = "Código incorrecto. Intentá de nuevo.";
+        ViewBag.Error = "Código incorrecto. Vuelvalo A Intentar.";
         return View("Sala3Computadora");
     }
 }
